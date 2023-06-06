@@ -351,14 +351,6 @@ ul {
   &-9 {
     left: 39.5rem;
   }
-
-  &-10 {
-    left: 45.7rem;
-  }
-
-  &-11 {
-    left: 49.5rem;
-  }
   
   &::before, &::after {
     content: "";
@@ -415,17 +407,6 @@ ul {
   &-three {
     animation: body-upDown 0.3s 0.2s infinite;
     left: 35rem;
-    
-    .compartment-window {
-      &::before { // Compartment-three shade
-        animation: up-down 0.35s infinite;
-      }
-    }
-  }
-
-  &-four {
-    animation: body-upDown 0.3s 0.2s infinite;
-    left: 45rem;
     
     .compartment-window {
       &::before { // Compartment-three shade
