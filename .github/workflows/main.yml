@@ -31,6 +31,7 @@ jobs:
           git config --local user.name 'liaucg'
           git add resources/css/*
           git commit -m "Update compiled CSS files"
+          git push
 
   deploy:
     runs-on: ubuntu-latest
