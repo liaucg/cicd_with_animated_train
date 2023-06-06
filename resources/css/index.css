@@ -320,6 +320,12 @@ ul {
 .wheel-9 {
   left: 39.5rem;
 }
+.wheel-10 {
+  left: 45.7rem;
+}
+.wheel-11 {
+  left: 49.5rem;
+}
 .wheel::before, .wheel::after {
   content: "";
   position: absolute;
@@ -368,6 +374,13 @@ ul {
   left: 35rem;
 }
 .compartment-three .compartment-window::before {
+  animation: up-down 0.35s infinite;
+}
+.compartment-four {
+  animation: body-upDown 0.3s 0.2s infinite;
+  left: 45rem;
+}
+.compartment-four .compartment-window::before {
   animation: up-down 0.35s infinite;
 }
 .compartment::before, .compartment::after {

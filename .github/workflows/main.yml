@@ -19,19 +19,6 @@ jobs:
     steps:
       - name: Check out repository code
         uses: actions/checkout@v3
-      - name: Compile CSS from SCSS files
-        uses: gha-utilities/sass-build@v0.5.1
-        with:
-          source: index.scss
-          destination: ./resources/css/index.css
-
-      - name: Commit changes
-        run: |
-          git config --local user.email 'liaucg@github.com'
-          git config --local user.name 'liaucg'
-          git add resources/css/*
-          git commit -m "Update compiled CSS files"
-          git push
 
   deploy:
     runs-on: ubuntu-latest
